@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_state_demo2/demo_controller.dart';
+import 'package:getx_state_demo2/widget/paga_a.dart';
 
 class StatelessDemo extends StatelessWidget {
   final DemoController dc = Get.put(DemoController());
@@ -25,7 +26,7 @@ class StatelessDemo extends StatelessWidget {
         onPressed: () {},
         child: IconButton(
           icon: Icon(Icons.home),
-          onPressed: () {},
+          onPressed: () => Get.to(PageA()),
         ),
       ),
     );
